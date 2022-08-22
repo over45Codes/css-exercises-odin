@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 body {
+  display: flex;
+  flex-direction: column;
   height: 100vh;
   margin: 0;
   overflow: hidden;
@@ -12,6 +14,7 @@ img {
 }
 
 button {
+  padding: 8px 16px;
   font-family: Roboto, sans-serif;
   border: none;
   border-radius: 8px;
@@ -24,4 +27,55 @@ input {
   padding: 8px 24px;
   width: 400px;
   margin-bottom: 16px;
+}
+
+ul {
+   /* this removes the dots on the list items*/
+   list-style-type: none;
+   display: flex;
+   list-style: none;
+   margin: 0;
+   padding: 0;
+   gap: 16px
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-right: 0;
+  padding: 0;
+  
+}
+
+.right-links:nth-child(2) {
+  
+   margin-right: 25px;
+}
+
+.left-links:nth-child(2) {
+
+ justify-content: flex-end;
+}
+
+.footer {
+  background: #eeeeee;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+a {
+  color: #666;
+  text-decoration: none;
+ 
+}
+.header,
+.footer {
+  padding: 16px;
 }
