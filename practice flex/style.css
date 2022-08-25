@@ -25,13 +25,20 @@ body {
         
     }
     
-    .box-1{}
-
-
-    .box-2{}
-
-    .box-3{
-        align-self: flex-end;
+    .box-1{
+      order:0;
     }
 
-    .box-4{}
+
+    .box-2{
+      order:2;
+    }
+
+    .box-3{
+      order: 3;
+        /* align-self: flex-end;  */
+    }
+    /* align-self is just used to move one flex item inside a container*/
+    .box-4{
+      order: 4;
+    }
