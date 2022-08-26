@@ -18,14 +18,40 @@ body {
         display: flex;
       /*   gap: 20px; */
         flex-wrap: wrap;
-        flex-direction: column;
+        flex-direction: row;
        /*  place-content: center; */
      /*   align-content: center; */
    /*     align-items: flex-end; */
-        
+     }
+
+
+    [class^="box-"]{
+    width: 100px;
+    height: 100px;
+    background-color: skyblue;
+    border-radius: 10px;
+      }
+
+      .box-1{
+      flex-grow: 1;
     }
-    
-    .box-1{
+
+
+    .box-2{
+      order:2;
+    }
+
+    .box-3{
+      order: 3;
+      
+      } 
+
+      .box-4{
+        order: 4;
+      }
+
+          
+ /*    .box-1{
       order:0;
     }
 
@@ -38,7 +64,7 @@ body {
       order: 3;
         /* align-self: flex-end;  */
     }
-    /* align-self is just used to move one flex item inside a container*/
+    /* align-self is just used to move one flex item inside a container
     .box-4{
       order: 4;
-    }
+    } */
