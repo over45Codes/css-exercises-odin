@@ -63,7 +63,7 @@ body {
     .box-3{
       order: 3;
         /* align-self: flex-end;  */
-    }
+ 
     /* align-self is just used to move one flex item inside a container
     .box-4{
       order: 4;
